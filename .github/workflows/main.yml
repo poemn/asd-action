@@ -13,7 +13,8 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
-          who-to-greet: 'Hello'
+          who-to-greet: 'poemn'
+          who-to-greet2: 'shiori'
       # 「hello」ステップの出力を使用する
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
